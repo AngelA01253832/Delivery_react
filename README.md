@@ -1,5 +1,5 @@
 ## Equipo 09
-- Zairee Diaz
+- Zaire Diaz
 - Ángel Manuel Bonilla Huesca
 - Aury Josué Almazán Guzmán
 - Darwin Jiménez
