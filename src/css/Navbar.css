@@ -1,0 +1,44 @@
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar span{
+    font-family: 'Alfa Slab One';
+    color: #bf2222;
+    border-bottom: 2px solid #3d2514;
+}
+
+.navbar h1{
+	font-family:'Alfa Slab One';
+	font-size: 1.5rem;
+	margin:11px 25px auto 100px;
+	letter-spacing: 2px;
+	color:#3d2514;
+}
+.navbar{
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar ul{
+    display: flex;
+    
+}
+.navbar ul li {
+    font-family: 'Bebas Neue';
+	height:40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#3d2514;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
