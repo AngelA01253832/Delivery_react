@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 function Pedido(){
     return(
     <>
-        <h1>Pedido Status</h1>
+        <h1>Status de mi pedido</h1>
     </>
     )
 }

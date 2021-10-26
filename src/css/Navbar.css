@@ -25,23 +25,21 @@ a{
     position: relative;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
 }
 .navbar ul{
+    margin: 1px;
     display: flex;
-    
 }
-.navbar ul li {
+.navbar ul li a{
     font-family: 'Bebas Neue';
+    color:#3d2514;
 	height:40px;
 	line-height: 43px;
-	margin: 3px;
-	padding: 0px 22px;
+	padding: 0px 40px;
 	display: flex;
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	font-weight: 500;
-	color:#3d2514;
     letter-spacing: 1px;
     border-radius: 3px;
     transition: 0.2s ease-in-out;
