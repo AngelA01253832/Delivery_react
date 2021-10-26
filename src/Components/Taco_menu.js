@@ -1,8 +1,12 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 function Taco_menu(){
     return(
-        Taco
+    <>
+        <h1>Tacos menu</h1>
+    </>
+
     )
 }
 

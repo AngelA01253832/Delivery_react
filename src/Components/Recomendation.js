@@ -5,7 +5,7 @@ import "../css/Recomendation.css"
 function Recomendation(){
     return(
          <div>
-             <h1>Recomendaciones</h1>
+             <h1>Productos del dia</h1>
              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
