@@ -4,6 +4,9 @@ ul{
 a{
     text-decoration: none;
 }
+.logo:hover{
+    cursor: pointer;
+}
 .navbar span{
     font-family: 'Alfa Slab One';
     color: #bf2222;
@@ -13,7 +16,7 @@ a{
 .navbar h1{
 	font-family:'Alfa Slab One';
 	font-size: 1.5rem;
-	margin:11px 25px auto 100px;
+	margin:auto 25px auto 100px;
 	letter-spacing: 2px;
 	color:#3d2514;
 }
@@ -22,6 +25,7 @@ a{
     position: relative;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 .navbar ul{
     display: flex;
@@ -41,4 +45,12 @@ a{
     letter-spacing: 1px;
     border-radius: 3px;
     transition: 0.2s ease-in-out;
+}
+
+.navbar ul li a:hover{
+    cursor:pointer;
+	background-color: #bf2222;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+	transition: all ease 0.2s;
 }

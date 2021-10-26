@@ -4,7 +4,7 @@ import '../css/Navbar.css'
 function Navbar(){
     return(
         <nav className="navbar">
-            <h1><span>TACO</span> DELI</h1>
+            <div className="logo"><h1><span>TACO</span> DELI</h1></div>
             <ul className="Menu_options">
                 <li>Tacos</li>
                 <li>Hamburguesas</li>
