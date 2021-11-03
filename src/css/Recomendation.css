@@ -3,3 +3,21 @@ h1{
     color:#3d2514;
     margin: 25px auto auto 100px;
 }
+
+.carousel-inner{
+    display: grid;
+    grid-column: 4;
+    justify-content: center;
+    
+
+}
+
+.Cardcontainer{
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.Columncontainer{
+    display: flex;
+    margin: auto 10px auto 10px;
+}

@@ -17,7 +17,7 @@ function Navbar(){
         <Router>
             <nav className="navbar">
                 <div className="logo">
-                    <Link to="/"><h1><span>TACO</span> DELI</h1></Link>
+                    <Link to="/"><h1><span>PIZZA</span> DELI</h1></Link>
                 </div>
                 <ul className="Menu_options">
                     <li>
@@ -32,6 +32,11 @@ function Navbar(){
                     <li>
                         <Link to="/Pedidos">Mis pedidos</Link>
                     </li>
+                    <div id="Cart">
+                        <li id>
+                            <a href>Carrito</a>
+                        </li>
+                    </div>
                 </ul>
             </nav>
             <Switch>

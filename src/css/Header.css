@@ -5,7 +5,7 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../img/Taco_Publicity.jpg');
+    background-image: url('../img/pizza_publicity.jpg');
 }
 .header{
 	font-family: 'Montserrat';
@@ -19,7 +19,7 @@
 .header span{
     font-family: 'Alfa Slab One';
     color: #bf2222;
-    border-bottom: 2px solid #3d2514;
+    border-bottom: 2px solid #fff;
 }
 .header .details{
     font-size: 23px;
@@ -30,12 +30,12 @@
 	font-size: 1.6rem;
 	margin:0px;
 	letter-spacing: 2px;
-	color:#3d2514;
+	color:#fff;
 }
 .header h1{
 	font-family:'Alfa Slab One';
 	font-size: 4rem;
 	margin:0px;
 	letter-spacing: 2px;
-	color:#3d2514;
+	color:#fff;
 }

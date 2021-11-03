@@ -5,7 +5,7 @@ function Header(){
         <div id="Publicity">
             <div className="header">
                 <h3>Los mejores tacos del estado</h3>
-                <h1><span>TACO</span> DELI</h1>
+                <h1><span>PIZZA</span> DELI</h1>
             </div>
             
         </div>

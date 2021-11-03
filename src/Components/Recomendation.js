@@ -1,6 +1,6 @@
 import React from "react";
-import Product from "./Product";
 import "../css/Recomendation.css"
+import ImgMediaCard from "./Product";
 
 function Recomendation(){
     return(
@@ -14,14 +14,24 @@ function Recomendation(){
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        1
+                        <div className="Cardcontainer">
+                            <div className="Columcontainer">
+                                <ImgMediaCard/> 
+                                <ImgMediaCard/> 
+                                <ImgMediaCard/> 
+                                <ImgMediaCard/> 
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        2
+                        <div className="Cardcontainer">
+                            <ImgMediaCard/> 
+                            <ImgMediaCard/> 
+                            <ImgMediaCard/> 
+                            <ImgMediaCard/>
+                        </div> 
                     </div>
-                    <div class="carousel-item">
-                        3
-                    </div>
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

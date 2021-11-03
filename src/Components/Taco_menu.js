@@ -1,7 +1,8 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React, { useState } from "react";
+
 
 function Taco_menu(){
+    const [cart,setCart]= useState(0)
     return(
     <>
         <h1>Tacos menu</h1>
