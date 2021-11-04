@@ -21,16 +21,16 @@ function Navbar(){
                 </div>
                 <ul className="Menu_options">
                     <li>
-                        <Link to="/Tacos">Tacos</Link>
+                        <Link to="/Tacos">Pizzas</Link>
                     </li>
                     <li>
-                        <Link to="/Hamburguesas">Hamburguesas</Link>
+                        <Link to="/Hamburguesas">Adicionales</Link>
                     </li>
                     <li>
                         <Link to="/Contacto">Contacto</Link>
                     </li>
                     <li>
-                        <Link to="/Pedidos">Mis pedidos</Link>
+                        <Link to="/Pedidos">Status pedido</Link>
                     </li>
                     <div id="Cart">
                         <li id>

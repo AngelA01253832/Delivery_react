@@ -1,12 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Cart(props){
-    const [cart] = props;
+function Cart(){
+    const [cart,setCart] = useState(0)
     return(
         <>
             <h3>Carrito</h3>
-            {cart.length === 0 && <div>Carrito vacio</div>}
-             
         </>
         )
 }

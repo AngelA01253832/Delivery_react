@@ -1,11 +1,12 @@
 import React from "react";
 import "../css/Recomendation.css"
 import ImgMediaCard from "./Product";
+import {Box,Grid} from '@material-ui/core';
 
 function Recomendation(){
-    return(
+    return(  
          <div>
-             <h1>Productos del dia</h1>
+             <h1>Elige tu pizza</h1>
              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -15,21 +16,53 @@ function Recomendation(){
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div className="Cardcontainer">
-                            <div className="Columcontainer">
-                                <ImgMediaCard/> 
-                                <ImgMediaCard/> 
-                                <ImgMediaCard/> 
-                                <ImgMediaCard/> 
-                            </div>
+                            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                                <Grid item xs={6}>
+                                    <div className="Columcontainer">
+                                        <ImgMediaCard/>    
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="Columcontainer">
+                                        <ImgMediaCard/>    
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="Columcontainer">
+                                        <ImgMediaCard/>    
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="Columcontainer">
+                                        <ImgMediaCard/>    
+                                    </div>
+                                </Grid>
+                            </Grid>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div className="Cardcontainer">
-                            <ImgMediaCard/> 
-                            <ImgMediaCard/> 
-                            <ImgMediaCard/> 
-                            <ImgMediaCard/>
-                        </div> 
+                    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                            <Grid item xs={6}>
+                                <div className="Columcontainer">
+                                    <ImgMediaCard/>    
+                                </div>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <div className="Columcontainer">
+                                    <ImgMediaCard/>    
+                                </div>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <div className="Columcontainer">
+                                    <ImgMediaCard/>    
+                                </div>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <div className="Columcontainer">
+                                    <ImgMediaCard/>    
+                                </div>
+                            </Grid>
+                        </Grid> 
                     </div>
 
                 </div>
