@@ -1,0 +1,10 @@
+.StepProgress{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}       
+
+.Progress-container{
+    width: 70rem;
+    height: 80rem;
+}       
