@@ -8,7 +8,7 @@ import recomendation1list2 from "../Fake_backend/recomendation2";
 function Recomendation(){
     return(  
          <div>
-             <h1>Recomendaciones</h1>
+             <h1 className="title">Recomendaciones</h1>
              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -18,10 +18,10 @@ function Recomendation(){
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div className="Cardcontainer">
-                            <Grid container spacing={3} >
+                            <Grid container align = "center" justify = "center" alignItems = "center" >
                             {
                                 recomendation1list1.map((e) => 
-                                    <Grid item xs={10} sm={8} md={6} lg={4}>
+                                    <Grid item xs={8} sm={8} md={6} lg={4}>
                                         <ImgMediaCard 
                                         name = {e.name}
                                         description = {e.description}
@@ -35,7 +35,7 @@ function Recomendation(){
                         </div>
                     </div>
                     <div class="carousel-item">
-                    <Grid container spacing={3} >
+                    <Grid container align = "center" justify = "center" alignItems = "center" >
                         {
                             recomendation1list2.map((e) => 
                                 <Grid item xs={10} sm={8} md={6} lg={4}>
