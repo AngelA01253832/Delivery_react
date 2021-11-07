@@ -2,11 +2,13 @@ import React from "react";
 import "../css/Recomendation.css"
 import ImgMediaCard from "./Product";
 import {Box,Grid} from '@material-ui/core';
-
+import pizzalist from '../Fake_backend/Pizza_data'
+import recomendation1list1 from "../Fake_backend/recomendation1";
+import recomendation1list2 from "../Fake_backend/recomendation2";
 function Recomendation(){
     return(  
          <div>
-             <h1>Elige tu pizza</h1>
+             <h1>Recomendaciones</h1>
              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -17,52 +19,36 @@ function Recomendation(){
                     <div class="carousel-item active">
                         <div className="Cardcontainer">
                             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                                <Grid item xs={6}>
-                                    <div className="Columcontainer">
-                                        <ImgMediaCard/>    
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6}>
-                                    <div className="Columcontainer">
-                                        <ImgMediaCard/>    
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6}>
-                                    <div className="Columcontainer">
-                                        <ImgMediaCard/>    
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6}>
-                                    <div className="Columcontainer">
-                                        <ImgMediaCard/>    
-                                    </div>
-                                </Grid>
+                            {
+                                recomendation1list1.map((e) => 
+                                    <Grid item xs={6}>
+                                        <ImgMediaCard 
+                                        name = {e.name}
+                                        description = {e.description}
+                                        image = {e.image}
+                                        price= {e.price}
+                                        />    
+                                    </Grid>
+                                )
+                            }
                             </Grid>
                         </div>
                     </div>
                     <div class="carousel-item">
                     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                            <Grid item xs={6}>
-                                <div className="Columcontainer">
-                                    <ImgMediaCard/>    
-                                </div>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <div className="Columcontainer">
-                                    <ImgMediaCard/>    
-                                </div>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <div className="Columcontainer">
-                                    <ImgMediaCard/>    
-                                </div>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <div className="Columcontainer">
-                                    <ImgMediaCard/>    
-                                </div>
-                            </Grid>
-                        </Grid> 
+                        {
+                            recomendation1list2.map((e) => 
+                                <Grid item xs={6}>
+                                    <ImgMediaCard 
+                                    name = {e.name}
+                                    description = {e.description}
+                                    image = {e.image}
+                                    price= {e.price}
+                                    />    
+                                </Grid>
+                            )
+                        }
+                    </Grid> 
                     </div>
 
                 </div>

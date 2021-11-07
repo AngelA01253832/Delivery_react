@@ -11,7 +11,7 @@ function ImgMediaCard(props) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        alt="green iguana"
+        alt="producto"
         height="140"
         image={props.image}
       />
@@ -23,7 +23,7 @@ function ImgMediaCard(props) {
           {props.description}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {props.price}
+          $: {props.price}
         </Typography>
       </CardContent>
       <CardActions>
