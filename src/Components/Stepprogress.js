@@ -19,7 +19,6 @@ export default function Progress() {
   return (
     
     <Box sx={{ width: '100%' }}>
-    {setTimeout(handleNext,10000)}
       <Stepper activeStep={activeStep}>
         {steps.map((label) => {
           const stepProps = {};
@@ -31,6 +30,7 @@ export default function Progress() {
           );
         })}
       </Stepper>
+    {setTimeout(handleNext,15000)}
       
     </Box>
   );
