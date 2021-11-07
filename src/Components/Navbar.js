@@ -47,7 +47,9 @@ function Navbar(){
                     <Hamburguer_menu/>
                 </Route>
                 <Route path="/Contacto">
-                    <Contacto/>
+                    <section className="contacto">
+                        <Contacto />
+                    </section>
                 </Route>
                 <Route path="/Pedidos">
                     <Pedido/>
