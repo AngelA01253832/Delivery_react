@@ -1,8 +1,8 @@
 import React from 'react'
 import '../css/Navbar.css'
 import Home from './Home';
-import Taco_menu from './Taco_menu'
-import Hamburguer_menu from './Hamburguer_menu'
+import Pizza_menu from './Pizza_menu'
+import  Adicionales from './Adicionales_menu'
 import Contacto from './Contacto'
 import Pedido from './Pedido'
 import { 
@@ -23,10 +23,10 @@ function Navbar(){
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <Link to="/Tacos">Pizzas</Link>
+                    <Link to="/Pizzas">Pizzas</Link>
                 </li>
                 <li class="nav-item">
-                    <Link to="/Hamburguesas">Adicionales</Link>                </li>
+                    <Link to="/Adicionales">Adicionales</Link>                </li>
                 <li class="nav-item">
                     <Link to="/Contacto">Contacto</Link>
                 </li>
@@ -72,11 +72,11 @@ function Navbar(){
                 </ul>
             </nav> */}
             <Switch>
-                <Route path="/Tacos">
-                    <Taco_menu/>
+                <Route path="/Pizzas">
+                    <Pizza_menu/>
                 </Route>
-                <Route path="/Hamburguesas">
-                    <Hamburguer_menu/>
+                <Route path="/Adicionales">
+                    <Adicionales/>
                 </Route>
                 <Route path="/Contacto">
                     <section className="contacto">
@@ -84,7 +84,7 @@ function Navbar(){
                     </section>
                 </Route>
                 <Route path="/Pedidos">
-                    <Pedido order = {false}/>
+                    <Pedido productos = {1}/>
                 </Route>
                 <Route path="/">
                     <Home/>

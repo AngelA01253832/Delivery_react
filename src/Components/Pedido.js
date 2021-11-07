@@ -9,13 +9,14 @@ function Pedido(props){
     const [pedidoscart, setPedidoscart] = useState(0);
     
     const orderverification = (e) => setPedidos(e)
-    const confirmorder = () => setPedidoscart(pedidoscart+1)
+    const alertapedido = () => alert("No hay pedidos existentes") 
+    //setPedidoscart(props.productos)
     if(pedidos === false){
         return(
         <>
             <h1 className="title">Pedidos existentes: {pedidoscart}</h1>
             <div className="false-order-container">
-                <button type="button" class="btn btn-success" onClick={ orderverification}>Confirmar orden</button>
+                <button type="button" class="btn btn-success" onClick={ pedidoscart === 0  ? alertapedido : orderverification}>Confirmar orden</button>
             </div>
             {/* <div className="img-progress-container">
                 <img src={emptycart}></img>

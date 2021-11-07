@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-function Taco_menu(){
+function Pizza_menu(){
     return(
     <>
         <h1>Pizza Menu</h1>
@@ -10,4 +10,4 @@ function Taco_menu(){
     )
 }
 
-export default Taco_menu;
+export default Pizza_menu;

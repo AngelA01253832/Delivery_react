@@ -1,10 +1,10 @@
 import React from "react";
 import Product from "./Product";
 
-function Hamburguer_menu(){
+function Adicionales(){
     return(
     <>
-        <h1>Hamburguesas menu</h1>
+        <h1>Adicionales menu</h1>
         <Product/>
         {/* <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -36,4 +36,4 @@ function Hamburguer_menu(){
     )
 }
 
-export default Hamburguer_menu;
+export default  Adicionales;
