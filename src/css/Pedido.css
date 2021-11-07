@@ -7,4 +7,19 @@
 .Progress-container{
     width: 70rem;
     height: 80rem;
-}       
+}
+.img-progress-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.title{
+    margin-top: 75px;
+}
+
+.false-order-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
