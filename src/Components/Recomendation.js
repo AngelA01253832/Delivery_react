@@ -18,10 +18,10 @@ function Recomendation(){
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div className="Cardcontainer">
-                            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                            <Grid container spacing={3} >
                             {
                                 recomendation1list1.map((e) => 
-                                    <Grid item xs={6}>
+                                    <Grid item xs={10} sm={8} md={6} lg={4}>
                                         <ImgMediaCard 
                                         name = {e.name}
                                         description = {e.description}
@@ -35,10 +35,10 @@ function Recomendation(){
                         </div>
                     </div>
                     <div class="carousel-item">
-                    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                    <Grid container spacing={3} >
                         {
                             recomendation1list2.map((e) => 
-                                <Grid item xs={6}>
+                                <Grid item xs={10} sm={8} md={6} lg={4}>
                                     <ImgMediaCard 
                                     name = {e.name}
                                     description = {e.description}

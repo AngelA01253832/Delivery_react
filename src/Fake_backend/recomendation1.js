@@ -27,6 +27,20 @@ const recomendation1list1 = [
         image: "https://www.hola.com/imagenes/cocina/recetas/20210301185216/pizza-de-coliflor-y-carne-picada/0-925-115/pizza-age-m.jpg",
         price: 109
     },
+    {
+        id:5,
+        name: "Papas a la francesa",
+        description: "230 gr",
+        image: "https://www.cocinavital.mx/wp-content/uploads/2020/09/papas-a-la-francesa-crujientes-634x420.jpg",
+        price: 79 
+    },
+    {
+        id:6,
+        name: "Pizza de tocino",
+        description: "Pizza de tocino tamaño familiar, ideal cumplir un antojo",
+        image: "https://www.recetaspizzas.com/base/stock/Recipe/12-image/12-image_web.jpg",
+        price: 109 
+    },
 ]
 
 export default recomendation1list1
