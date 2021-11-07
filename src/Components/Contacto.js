@@ -46,7 +46,7 @@ function Contacto() {
 
   return (
     <section className="datos_contacto">
-      <h1>Contacto</h1>
+      <h1 className="title">Contacto</h1>
       <div className="row_section">
         <div className="column_section">
           <form id="formulario" className="formulario" onSubmit={sendEmail}>

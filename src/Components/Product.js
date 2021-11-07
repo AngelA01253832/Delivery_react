@@ -27,7 +27,6 @@ function ImgMediaCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Detalles</Button>
         <Button size="small">Añadir a mi orden</Button>
       </CardActions>
     </Card>
