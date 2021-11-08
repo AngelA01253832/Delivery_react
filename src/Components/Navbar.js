@@ -84,7 +84,7 @@ function Navbar(){
                     </section>
                 </Route>
                 <Route path="/Pedidos">
-                    <Pedido productos = {1}/>
+                    <Pedido/>
                 </Route>
                 <Route path="/">
                     <Home/>

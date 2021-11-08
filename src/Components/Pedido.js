@@ -6,7 +6,7 @@ import imagepedido from '../img/entrega.png'
 
 function Pedido(props){
     const [pedidos, setPedidos] = useState(false);
-    const [pedidoscart, setPedidoscart] = useState(0);
+    const [pedidoscart, setPedidoscart] = useState(1);
     
     const orderverification = (e) => setPedidos(e)
     const alertapedido = () => alert("No hay pedidos existentes") 
