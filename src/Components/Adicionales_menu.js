@@ -3,7 +3,7 @@ import ImgMediaCard from "./Product";
 import {Box,Grid} from '@material-ui/core';
 import adicionaleslist from "../Fake_backend/Adicionales_data";
 import '../css/Menu.css'
-function Adicionales(props){
+function Adicionales({props, onclick}){
     
     return(
     <>
@@ -18,7 +18,7 @@ function Adicionales(props){
                             description = {e.description}
                             image = {e.image}
                             price= {e.price}
-                            onclick = {props.onclick}
+                            onclick = {onclick}
                             />    
                         </Grid>
                     )
