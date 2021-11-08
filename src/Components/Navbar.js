@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/Navbar.css'
 import Home from './Home';
 import Pizza_menu from './Pizza_menu'
@@ -13,6 +13,15 @@ import {
 } from "react-router-dom";
 
 function Navbar(){
+    const [pago,setPago] = useState(0)
+    const [cart,setCart] = useState(0) 
+
+
+    const addcart = (e) => {
+        setCart(cart+1)
+        setPago(pago+e.price)
+
+    }
     return(
         <Router>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,57 +35,29 @@ function Navbar(){
                     <Link to="/Pizzas">Pizzas</Link>
                 </li>
                 <li class="nav-item">
-                    <Link to="/Adicionales">Adicionales</Link>                </li>
+                    <Link to="/Adicionales">Adicionales</Link>
+                </li>
                 <li class="nav-item">
                     <Link to="/Contacto">Contacto</Link>
                 </li>
                 <li class="nav-item">
                     <Link to="/Pedidos">Status pedido</Link>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Carrito
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
+                    cart = {cart}
+                    pago={pago}
                 </ul>
             </div>
         </nav>
-            {/* <nav className="navbar">
-                <div className="logo">
-                    <Link to="/"><h1><span>PIZZA</span> DELI</h1></Link>
-                </div>
-                <ul className="Menu_options">
-                    <li>
-                        <Link to="/Tacos">Pizzas</Link>
-                    </li>
-                    <li>
-                        <Link to="/Hamburguesas">Adicionales</Link>
-                    </li>
-                    <li>
-                        <Link to="/Contacto">Contacto</Link>
-                    </li>
-                    <li>
-                        <Link to="/Pedidos">Status pedido</Link>
-                    </li>
-                    <div id="Cart">
-                        <li id>
-                            <a href>Carrito</a>
-                        </li>
-                    </div>
-                </ul>
-            </nav> */}
             <Switch>
                 <Route path="/Pizzas">
-                    <Pizza_menu/>
+                    <Pizza_menu
+                        onclick = {addcart}
+                    />
                 </Route>
                 <Route path="/Adicionales">
-                    <Adicionales/>
+                    <Adicionales
+                        onclick = {addcart}
+                    />
                 </Route>
                 <Route path="/Contacto">
                     <section className="contacto">
@@ -84,7 +65,13 @@ function Navbar(){
                     </section>
                 </Route>
                 <Route path="/Pedidos">
-                    <Pedido/>
+                    <Pedido
+                        pago = {pago}
+                        setPago = {setPago}
+                        cart = {cart}
+                        setCart = {setCart}
+
+                    />
                 </Route>
                 <Route path="/">
                     <Home/>

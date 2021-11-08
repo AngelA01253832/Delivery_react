@@ -7,6 +7,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 function ImgMediaCard(props) {
+ 
+  let onclick = props.onclick
+ 
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -27,7 +31,7 @@ function ImgMediaCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Añadir a mi orden</Button>
+        <Button size="small" onClick={onclick}>Añadir a mi orden</Button>
       </CardActions>
     </Card>
   );
