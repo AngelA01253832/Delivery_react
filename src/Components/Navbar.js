@@ -43,8 +43,7 @@ function Navbar(){
                 <li class="nav-item">
                     <Link to="/Pedidos">Status pedido</Link>
                 </li>
-                    cart = {cart}
-                    pago={pago}
+                    
                 </ul>
             </div>
         </nav>
