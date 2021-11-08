@@ -5,7 +5,8 @@ import {Box,Grid} from '@material-ui/core';
 import pizzalist from '../Fake_backend/Pizza_data'
 import recomendation1list1 from "../Fake_backend/recomendation1";
 import recomendation1list2 from "../Fake_backend/recomendation2";
-function Recomendation(){
+function Recomendation(props){
+    let onclick = props.onclick
     return(  
          <div>
              <h1 className="title">Recomendaciones</h1>
@@ -27,6 +28,7 @@ function Recomendation(){
                                         description = {e.description}
                                         image = {e.image}
                                         price= {e.price}
+                                        onclick = {onclick}
                                         />    
                                     </Grid>
                                 )
@@ -44,6 +46,7 @@ function Recomendation(){
                                     description = {e.description}
                                     image = {e.image}
                                     price= {e.price}
+                                    onclick = {onclick}
                                     />    
                                 </Grid>
                             )

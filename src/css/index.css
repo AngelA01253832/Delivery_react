@@ -16,11 +16,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-<<<<<<< HEAD
-a{
-  text-decoration: none;
-}
-=======
 
 @media(max-width: 515px){
 
@@ -28,4 +23,3 @@ a{
     overflow-x: hidden;
   }
 }
->>>>>>> 29a5866915c88454fde66323524d54feb32c6ecf

@@ -17,9 +17,9 @@ function Navbar(){
     const [cart,setCart] = useState(0) 
 
 
-    const addcart = (e) => {
+    const addcart = (precio) => {
         setCart(cart+1)
-        setPago(pago+e.price)
+        setPago(pago+precio)
 
     }
     return(
@@ -73,7 +73,7 @@ function Navbar(){
                     />
                 </Route>
                 <Route path="/">
-                    <Home/>
+                    <Home onclick = {addcart}/>
                 </Route> 
             </Switch>
         </Router>
