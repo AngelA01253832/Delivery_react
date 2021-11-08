@@ -35,7 +35,44 @@
 .header h1{
 	font-family:'Alfa Slab One';
 	font-size: 4rem;
-	margin:0px;
+	margin:0px 2.8;
 	letter-spacing: 2px;
 	color:#fff;
+}
+
+@media(max-width: 460.98px){
+
+  #Publicity{
+      display: flex;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+  }
+    
+  .header{
+    margin: 5% -5.8px;
+    top: 50%;
+    left: 30%;
+   }
+ 
+   .header > h3{
+     font-size: 1.5rem;
+   }
+
+   .header h1{
+       font-size: 3rem;
+       margin: 0 8rem;
+   }
+ 
+}
+
+@media(min-width: 768px){
+    #Publicity{
+        max-width: 100%;
+    }
+
+    .header h1{
+        margin: 0 5rem;
+    }
 }

@@ -1,12 +1,11 @@
-h1{
+.title{
+    
     font-family: 'Bebas Neue';
     text-align: center;
     color:#3d2514;
 }
 
 .carousel-inner{
-    display: flex;
-    justify-content: space-around;
+    margin-top: 100px;
 }
-
 

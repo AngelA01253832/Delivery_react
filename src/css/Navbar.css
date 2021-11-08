@@ -10,6 +10,7 @@ a{
 .navbar span{
     font-family: 'Alfa Slab One';
     color: #bf2222;
+    text-decoration: none;
     
 }
 
@@ -52,8 +53,14 @@ a{
     color:#ffffff;
 	box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
 	transition: all ease 0.2s;
+    text-decoration: none;
 }
 
 #Cart{
-    margin-left: 35vw;
+    margin-left: 25vw;
+}
+
+.contacto{
+  text-align: center;
+  width: 100%;
 }
