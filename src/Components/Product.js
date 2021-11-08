@@ -6,10 +6,12 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-function ImgMediaCard(props) {
+function ImgMediaCard({image, name,description,price,onclick}) {
 
-  let onclick = props.onclick
- 
+  //let onclick = props.onclick
+ const showprice = ()=> {
+    onclick(price)
+ }
 
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -17,21 +19,21 @@ function ImgMediaCard(props) {
         component="img"
         alt="producto"
         height="140"
-        image={props.image}
+        image={image}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {props.name}
+          {name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {props.description}
+          {description}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          $: {props.price}
+          $: {price}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={onclick}>Añadir a mi orden</Button>
+        <Button size="small" onClick={(showprice)}>Añadir a mi orden</Button>
       </CardActions>
     </Card>
   );

@@ -4,8 +4,8 @@ import {Box,Grid} from '@material-ui/core';
 import pizzalist from '../Fake_backend/Pizza_data'
 import '../css/Menu.css'
 
-export default function Pizza_menu(props){
-let onclick = props.onclick
+export default function Pizza_menu({props, onclick}){
+//let onclick = props.onclick
     return(
     <>
         <h1 className="title">Pizza Menu</h1>

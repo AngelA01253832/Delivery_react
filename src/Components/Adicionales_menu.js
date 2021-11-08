@@ -4,7 +4,7 @@ import {Box,Grid} from '@material-ui/core';
 import adicionaleslist from "../Fake_backend/Adicionales_data";
 import '../css/Menu.css'
 function Adicionales(props){
-    let onclick = props.onclick
+    
     return(
     <>
         <h1 className="title">Adicionales menu</h1>
@@ -18,7 +18,7 @@ function Adicionales(props){
                             description = {e.description}
                             image = {e.image}
                             price= {e.price}
-                            onclick = {onclick}
+                            onclick = {props.onclick}
                             />    
                         </Grid>
                     )
